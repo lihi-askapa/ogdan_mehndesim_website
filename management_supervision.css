@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+ }
+
+body{
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: none;
+    height: 100vh;
+
+}
+
+nav{
+    width:auto;
+    height:5.7vw;
+    background:rgba(0,0,0,0.3);
+    color:white;
+}
+
+label.logo img{
+    margin:0.7vw 5vw;
+    max-width:15vw;
+    float:left;
+}
+
+nav .links{
+    float:right;
+    margin-right:1.3vw;
+    padding:0vw 1vw;
+}
+
+nav .links li{
+    display:inline-block;
+    line-height:5.5vw;
+    margin:0 2vw;
+}
+
+nav .links a{
+    color:white;
+    font-size:1.2vw;
+    text-transform:uppercase;
+}
+
+nav .links i{
+    font-size:1.2vw;
+}
+
+.checkbth{
+    font-size:6vw;
+    color:white;
+    float:right;
+    line-height:11vw;
+    cursor:pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+input{
+    display: none;
+}
+
+.container{
+    width:auto;
+    text-align:center;
+}
+
+h1{
+    font-size:2.2vw;
+    font-weight:normal;
+    position: relative;
+    margin: 3vw 0;
+    text-transform:uppercase;
+    text-align: center;
+    color:black;
+    text-shadow:2px 1px 3px black;
+}
+
+.top-content h3{
+    font-size:1.4vw;
+    text-transform:uppercase;
+    text-align: center;
+    color:black;
+    text-shadow:0px 0px 0px black;
+    direction:rtl;
+    line-height: 1.6;
+}
+
+a{
+    font-size:1.2vw;
+    color:black;
+}
+
+h1::before{
+    content:'';
+    position:absolute;
+    width:auto;
+    height:0.2vw;
+    background-color:rgb(143, 188, 143,1);
+    bottom:-0.5vw;
+    left:50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width:30px;
+    }
+    50%{
+        width:300px;
+    }
+    100%{
+        width:30px;
+    }
+}
+
+section:nth-child(3){
+    height:145vw;
+}
+
+.photo-gallery{
+    width:auto;
+    margin:5vw;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap:3vw;
+    position:relative;
+    cursor:pointer;
+
+}
+
+.photo-gallery img{
+    width:20vw;
+    height:20vw;
+    border-radius:10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor:pointer;
+}
+
+.photo-gallery img:hover{
+    opacity:0.5;
+}
+
+
+section:nth-child(4){
+    height:10vw;
+    object-fit: cover;
+    object-position: 50vw 50vw;
+    background:rgb(143, 188, 143);
+
+}
+
+section .bottom-nav{
+    padding:1vw;
+}
+
+
+section .icons2{
+    text-align:right;
+    width:95vw;
+    color:white;
+    justify-content:space-around;
+    align-items:center;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .icons2 a{
+    text-align:right;
+    width:95vw;
+    color:white;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .lihi li{
+    list-style-type: none;
+}
+
+section .lihi h8{
+    font-size:1.5vw;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(186, 85, 211);
+    text-shadow: 1px 2px 3px white;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width:1vw;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(143, 188, 143, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(143, 188, 143, 1.5);
+}
+
+@media only screen and (max-width:1400px){
+@media only screen and (max-width:1400px){
+    nav{
+        width:auto;
+        height:20vw;
+        background:rgba(0,0,0,0.5);
+        color:white;
+    }
+
+    label.logo img{
+    margin:5vw 10vw;
+    max-width:30vw;
+    float:left;
+}
+
+    .checkbth{
+        font-size:6vw;
+        color:white;
+        float:right;
+        line-height:18vw;
+        margin-right:10vw;
+        cursor:pointer;
+        display:none;
+    }
+
+    .checkbth{
+        display:block;
+    }
+
+    nav .links{
+        height:110vw;
+        background:rgba(0,0,0,0.5);
+        background-size:auto;
+        position:absolute;
+        top:20vw;
+        left:-100vw;
+        text-align:center;
+        transition: all .5s;
+        background-position:center;
+        width:100vw;
+        z-index: 2;
+    }
+
+    nav .links li{
+        display:block;
+        margin:13vw 0;
+        line-height: 6vw;
+        text-shadow: 1px 1px 1px lightgrey;
+    }
+
+    nav .links li a{
+        font-size:4vw;
+        text-shadow: 1px 1px 1px lightgrey;
+    }
+
+    nav .links li i{
+        font-size:4vw;
+    }
+
+    #check:checked ~ .links{
+        left:0;
+    }
+
+    h1{
+        font-size:4vw;
+        font-weight:normal;
+        position: relative;
+        margin: 4vw 0;
+        text-transform:uppercase;
+        text-align: center;
+        color:black;
+        text-shadow:2px 1px 3px black;
+    }
+
+    .top-content h3{
+        font-size:2.7vw;
+        text-transform:uppercase;
+        text-align: center;
+        color:black;
+        text-shadow:0px 0px 0px black;
+        direction:rtl;
+        line-height: 1.6;
+    }
+
+    a{
+        font-size:2vw;
+        color:black;
+    }
+
+    h1::before{
+        content:'';
+        position:absolute;
+        width:auto;
+        height:0.5vw;
+        background-color:rgb(143, 188, 143,1);
+        bottom:-1vw;
+        left:50%;
+        transform: translateX(-50%);
+        animation: animate 4s linear infinite;
+    }
+
+@keyframes animate{
+    0%{
+        width:4vw;
+    }
+    50%{
+        width:40vw;
+    }
+    100%{
+        width:4vw;
+    }
+}
+
+    section:nth-child(3){
+        height:430vw;
+    }
+    }
+
+    .photo-gallery{
+        width:auto;
+        margin:16vw;
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-gap:5vw;
+        position:relative;
+        cursor:pointer;
+
+    }
+
+    .photo-gallery img{
+        width:30vw;
+        height:30vw;
+        border-radius:10px;
+        box-shadow: 3px 3px 5px lightgray;
+        cursor:pointer;
+    }
+
+    .photo-gallery img:hover{
+        opacity:0.5;
+    }
+
+
+    section:nth-child(4){
+        height:22vw;
+        object-fit: cover;
+        object-position: 50vw 50vw;
+        background:rgb(143, 188, 143);
+
+    }
+
+
+    section .icons2{
+        font-size:3vw;
+        text-align:right;
+        width:95vw;
+        color:white;
+        justify-content:space-around;
+        align-items:center;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    section .icons2 a{
+        font-size:3vw;
+        text-align:right;
+        width:95vw;
+        color:white;
+        line-height: 1.6;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    section .lihi li{
+    list-style-type: none;
+    }
+
+    section .lihi h8{
+    font-size:3vw;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(186, 85, 211);
+    text-shadow: 1px 2px 3px white;
+    font-weight: bold;
+}
+
+}
+}

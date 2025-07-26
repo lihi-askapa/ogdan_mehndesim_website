@@ -1,0 +1,628 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+ }
+
+body{
+    background-image: url('photo/avi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+}
+
+nav{
+    width:auto;
+    height:5.7vw;
+    background:rgba(0,0,0,0.3);
+    color:white;
+}
+
+label.logo img{
+    margin:0.7vw 5vw;
+    max-width:15vw;
+    float:left;
+}
+
+nav .links{
+    float:right;
+    margin-right:1.3vw;
+    padding:0vw 1vw;
+}
+
+nav .links li{
+    display:inline-block;
+    line-height:5.5vw;
+    margin:0 2vw;
+}
+
+nav .links a{
+    color:white;
+    font-size:1.2vw;
+    text-transform:uppercase;
+}
+
+nav .links i{
+    font-size:1.2vw;
+}
+
+.checkbth{
+    font-size:6vw;
+    color:white;
+    float:right;
+    line-height:11vw;
+    cursor:pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+main{
+    width:auto;
+    height:50vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+
+section:nth-child(1){
+    height:25vw;
+}
+
+section .title .text-card{
+    background:rgba(240,240,240,0.7);
+    padding:4vw;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    margin:0 30vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+section .title h1{
+    color:DarkOliveGreen;
+    font-size:3.2vw;
+    font-weight:500;
+    text-shadow: 2px 1px 5px black;
+    text-transform:uppercase;
+}
+
+section .title h5{
+    font-size:2.7vw;
+    font-weight:400;
+    text-shadow: 1px 1px 4px black;
+    color:DarkOliveGreen;
+    text-transform:uppercase;
+}
+
+section .title h3{
+    font-size:2vw;
+    font-weight:200;
+    text-shadow: 1px 1px 2px black;
+    color:DarkOliveGreen;
+}
+
+
+section .title2 .home-page{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+section:nth-child(3){
+    background:white;
+    height:5vw;
+}
+
+section .title2 h3{
+    font-size:2vw;
+    text-transform:uppercase;
+    text-align: center;
+    color:DarkOliveGreen;
+    text-shadow:2px 1px 3px black;
+    margin:-4.5vw 0vw;
+}
+
+section .title2 .text-card{
+    background:rgb(0, 0, 0, 0);
+    margin:2vw 20vw;
+
+}
+
+section:nth-child(4){
+    background:white;
+    height:45vh;
+}
+
+ .container{
+    display:flax;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card__container{
+    padding-block:5rem;
+}
+
+.card__content{
+    margin-inline:1.75rem;
+    border-radius:1.25rem;
+    overflow:hidden;
+}
+
+.container .card__container .card__content .card__article{
+    width: 300px;
+    border-radius:1.25rem;
+    overflow:hidden;
+}
+
+.container .card__container .card__content .card__article .card_data{
+    background-color:rgb(143, 188, 143);
+    padding:1.5rem 2rem;
+    border-radius:1rem;
+    text-align:center;
+    position:relative;
+    z-index:10;
+}
+
+.card__name{
+    font-size:var(--h2-font-size);
+    color:DarkOliveGreen;
+    text-shadow:0px 0.5px 0.5px black;
+    margin-bottom:0.75rem;
+}
+
+.card_discription{
+    color:white;
+    font-weight:500;
+    margin-bottom:1.75rem;
+}
+
+.card__button{
+    display:inline-block;
+    background-color:rgb(230, 126, 34);
+    padding:0.75rem 1.5rem;
+    border-radius:0.25rem;
+    color:var(--dark-color);
+    font-weight:600;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000; /* צבע החץ */
+    cursor: pointer;
+}
+
+.swiper-button-prev{
+    left:0;
+}
+
+.swiper-button-next{
+    right:0;
+}
+
+
+
+.swiper-pagination-bullet{
+    background-color:hsl(212, 32%, 40%);
+    opacity: 1;
+}
+
+section:nth-child(5){
+    height:25vw;
+    object-fit: cover;
+    object-position: 50vw 50vw;
+    background:white;
+
+}
+
+section .title-lekohot{
+    height:13vw;
+}
+
+section .title-lekohot .text-card{
+    background:rgb(0,0,0,0);
+    padding:2vw;
+    flex-direction: column;
+}
+
+section .title-lekohot .text-card h3{
+    font-size:2vw;
+    text-transform:uppercase;
+    text-align: center;
+    color:DarkOliveGreen;
+    text-shadow:2px 1px 3px black;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100vw);
+    }
+}
+
+.logos{
+    margin:-2vw 0;
+    overflow:hidden;
+    padding: 5vw 0;
+    white-space:nowrap;
+    position:relative;
+}
+
+.logos:before,
+.logos:after{
+    position:absolute;
+    top:0;
+    width:20vw;
+    height:100vw;
+    content:"";
+    z-index:2;
+}
+
+.logos:before{
+    position:absolute;
+    left:0;
+    background:linear-gradient(to left, rgb(255,255,255,0), white);
+}
+
+.logos:after{
+    position:absolute;
+    right:0;
+    background:linear-gradient(to right, rgb(255,255,255,0), white);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state:paused;
+}
+
+.logos-slide{
+    animation:35s slide infinite linear;
+    display: inline-block;
+}
+
+.logos-slide img{
+    height:7vw;
+    margin:-60vw 3vw;
+}
+
+section:nth-child(6){
+    height:11vw;
+    object-fit: cover;
+    object-position: 50vw 50vw;
+    background:rgb(143, 188, 143);
+
+}
+
+section .bottom-nav{
+    padding:1vw;
+}
+
+section .icons2{
+    text-align:right;
+    width:95vw;
+    color:white;
+    justify-content:space-around;
+    align-items:center;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .icons2 a{
+    text-align:right;
+    width:95vw;
+    color:white;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .lihi li{
+    list-style-type: none;
+}
+
+section .lihi h8{
+    font-size:1.5vw;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(186, 85, 211);
+    text-shadow: 1px 2px 3px white;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width:1vw;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(143, 188, 143, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(143, 188, 143, 1.5);
+}
+@media only screen and (max-width:1400px){
+.card_data{
+    padding:1rem;
+}
+}
+
+@media only screen and (max-width:768px){
+.card_content{
+    margin-inline:3rem;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    display:block;
+}
+}
+
+@media only screen and (max-width:1120px){
+
+nav{
+    width:auto;
+    height:20vw;
+    background:rgba(0,0,0,0.5);
+    color:white;
+}
+
+    label.logo img{
+    margin:5vw 10vw;
+    max-width:30vw;
+    float:left;
+}
+
+    .checkbth{
+    font-size:6vw;
+    color:white;
+    float:right;
+    line-height:18vw;
+    margin-right:10vw;
+    cursor:pointer;
+    display:none;
+}
+
+    .checkbth{
+        display:block;
+    }
+
+    nav .links{
+        height:110vw;
+        background:rgba(0,0,0,0.5);
+        background-size:auto;
+        position:absolute;
+        top:20vw;
+        left:-100vw;
+        text-align:center;
+        transition: all .5s;
+        background-position:center;
+        width:100vw;
+    }
+
+    nav .links li{
+        display:block;
+        margin:13vw 0;
+        line-height: 6vw;
+        text-shadow: 1px 1px 1px lightgrey;
+    }
+
+    nav .links li a{
+        font-size:4vw;
+        text-shadow: 1px 1px 1px lightgrey;
+    }
+
+    nav .links li i{
+        font-size:4vw;
+    }
+
+    #check:checked ~ .links{
+        left:0;
+    }
+    body{
+        background-image: url('photo/avi-media.jpg');
+        height: 100vw;
+        background-repeat: no-repeat;
+        width:auto;
+        background-position:center;
+    }
+
+    section:nth-child(1){
+        height:50vw;
+    }
+
+    main{
+    width:100vw;
+    height:80vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+    section .title .text-card{
+    background:rgba(240,240,240,0.7);
+    flex-direction: column;
+    }
+
+    section .title h1{
+        color:DarkOliveGreen;
+        font-size:5vw;
+        font-weight:500;
+        text-shadow: 1px 1px 2px black;
+        text-transform:uppercase;
+    }
+
+    section .title h5{
+        font-size:4vw;
+        font-weight:400;
+        text-shadow: 1px 1px 2px black;
+        color:DarkOliveGreen;
+        text-transform:uppercase;
+    }
+
+    section .title h3{
+        font-size:3.5vw;
+        font-weight:200;
+        text-shadow: 1px 1px 1px black;
+        color:DarkOliveGreen;
+
+    }
+.container .card__container{
+    max-width:1120px;
+
+}
+
+section:nth-child(3){
+    height:10vw;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:auto;
+    display:flex;
+}
+
+section:nth-child(5){
+    height:50vw;
+    object-fit: cover;
+    object-position: 50vw 50vw;
+    background:white;
+
+}
+
+section .title-lekohot{
+    height:25vw;
+}
+
+section .title-lekohot .text-card{
+    background:rgb(0,0,0,0);
+    margin: 2vw;
+    padding:5vw;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+}
+
+section .title-lekohot .text-card h3{
+    font-size:4vw;
+    text-transform:uppercase;
+    text-align: center;
+    color:DarkOliveGreen;
+    text-shadow:1px 1px 2px black;
+}
+
+section:nth-child(4){
+    background:rgb(143, 188, 143,0.1);
+    height:75vw;
+
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-400vw);
+    }
+}
+
+.logos{
+    margin:-5vw 0%;
+    overflow:hidden;
+    padding: 6vw 0%;
+    white-space:nowrap;
+    position:relative;
+}
+
+.logos:before,
+.logos:after{
+    position:absolute;
+    top:0;
+    width:20vw;
+    height:100vw;
+    content:"";
+    z-index:2;
+}
+
+.logos:before{
+    position:absolute;
+    left:0;
+    background:linear-gradient(to left, rgb(255,255,255,0), white);
+}
+
+.logos:after{
+    position:absolute;
+    right:0;
+    background:linear-gradient(to right, rgb(255,255,255,0), white);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state:paused;
+}
+
+.logos-slide{
+    animation:35s slide infinite linear;
+    display: inline-block;
+}
+
+.logos-slide img{
+    height:17vw;
+    margin:-60vw 5vw;
+}
+
+section:nth-child(6){
+    height:22vw;
+    object-fit: cover;
+    object-position: 50vw 50vw;
+    background:rgb(143, 188, 143);
+
+}
+
+section .icons2{
+    font-size:3vw;
+    text-align:right;
+    width:95vw;
+    color:white;
+    justify-content:space-around;
+    align-items:center;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .icons2 a{
+    font-size:3vw;
+    text-align:right;
+    width:95vw;
+    color:white;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px black;
+}
+
+section .lihi li{
+    list-style-type: none;
+}
+
+section .lihi h8{
+    font-size:3.5vw;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(186, 85, 211);
+    text-shadow: 1px 2px 2px white;
+    font-weight: bold;
+}
+}
+
+
